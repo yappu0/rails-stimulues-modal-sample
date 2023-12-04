@@ -1,7 +1,5 @@
 %div{'data-controller': 'modal'}
   %button.btn{type: :button, 'data-action': 'click->modal#open'} Open Modal
-  %dialog.modal{'data-modal-target': 'modal'}
-    .modal-overlay
-    .modal-content
-      %p Modal Content
-      %button.btn{type: :button, 'data-action': 'click->modal#close'} Close Modal
+  %dialog{'data-modal-target': 'modal'}
+    %p Modal Content
+    %button.btn{type: :button, 'data-action': 'click->modal#close'} Close Modal
