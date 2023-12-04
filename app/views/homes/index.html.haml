@@ -1,2 +1,11 @@
-%h1 Homes#index
-%p Find me in app/views/homes/index.html.haml
+%div{"data-controller" => "modal"}
+  #modal-1.modal.micromodal-slide{"aria-hidden" => "true"}
+    .modal__overlay{"data-micromodal-close" => "", :tabindex => "-1"}
+      .modal__container{"aria-labelledby" => "modal-1-title", "aria-modal" => "true", :role => "dialog"}
+        %header.modal__header
+          %h2#modal-1-title.modal__title Micromodal
+          %button.modal__close{"aria-label" => "Close modal", "data-micromodal-close" => ""}
+        #modal-1-content.modal__content
+          %p This is a completely accessible modal.
+  %button.modal__btn.modal__btn-primary{"data-micromodal-trigger" => "modal-1"}
+    OPEN

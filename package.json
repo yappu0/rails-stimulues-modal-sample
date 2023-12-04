@@ -5,6 +5,7 @@
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.0-beta.1",
     "esbuild": "^0.19.8",
+    "micromodal": "^0.4.10",
     "sass": "^1.69.5"
   },
   "scripts": {
