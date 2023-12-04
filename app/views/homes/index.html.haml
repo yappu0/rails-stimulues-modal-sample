@@ -1,0 +1,12 @@
+%button.btn.btn-primary{ 'data-bs-target': '#exampleModal', 'data-bs-toggle': 'modal', type: 'button' }
+  モーダルを開く
+#exampleModal.modal.fade{ 'aria-hidden': 'true', 'aria-labelledby': 'exampleModalLabel', tabindex: '-1', 'data-controller': 'modal' }
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %h1#exampleModalLabel.modal-title.fs-5 モーダルのタイトル
+        %button.btn-close{ 'aria-label': 'Close', 'data-bs-dismiss': 'modal', type: 'button' }
+      .modal-body
+        ここにテキストを入れる
+      .modal-footer
+        %button.btn.btn-secondary{ 'data-bs-dismiss': 'modal', type: 'button' } モーダルを閉じる
