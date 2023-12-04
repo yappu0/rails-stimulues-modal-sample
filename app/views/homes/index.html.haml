@@ -1,6 +1,6 @@
-%div{'data-controller': 'modal', 'data-modal-active-class': 'active'}
+%div{'data-controller': 'modal'}
   %button.btn{type: :button, 'data-action': 'click->modal#open'} Open Modal
-  .modal{'data-modal-target': 'modal'}
+  %dialog.modal{'data-modal-target': 'modal'}
     .modal-overlay
     .modal-content
       %p Modal Content
